@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -34,40 +35,47 @@
     <!-- SECTION 2 -->
     <section id="section2">
         <div id="section2-tabs">
-            <input type="radio" class="section2-tab" name="roma" checked><img src="img/icons/Airplane Mode On.png"
-                alt="airplane icon">Flight</input>
-            <input type="radio" class="section2-tab" name="roma"><img src="img/icons/Hotel Star.png"
-                alt="star icon">Hotel</input>
+            <button id="section2-tab1"><img src="img/icons/Airplane Mode On.png" alt="airplane icon"
+                    id="section2-tab-icon">Flight</button>
+            <button id="section2-tab2"><img src="img/icons/Hotel Star.png" alt="star icon">Hotel</button>
         </div>
 
         <div id="section2-main">
-            <div id="section2-box1">
-                <p class="section2-box-text1 section1-box-text-left">Living From</p>
-                <select id="section2-box-select1">
-                    <option>Dubai</option>
-                    <option>Chicago</option>
-                    <option>London</option>
-                </select>
+            <div class="section2-box" id="section2-box1">
+                <div class="section2-box-left">
+                    <p class="section2-box-text1 section1-box-text-left">Living From</p>
+                    <select class="section2-box-select">
+                        <option>Dubai</option>
+                        <option>Chicago</option>
+                        <option>London</option>
+                    </select>
+                </div>
                 <img src="img/icons/Airplane Mode On Gray.png" alt="airplane icon" class="section2-box-centerIcon">
-                <p class="section2-box-text1 section1-box-text-right">Going tom</p>
-                <select id="section2-box-select2">
-                    <option>New York</option>
-                    <option>Paris</option>
-                    <option>San Pedro</option>
-                </select>
+                <div class="section2-box-right">
+                    <p class="section2-box-text1 section1-box-text-right">Going tom</p>
+                    <select class="section2-box-select">
+                        <option>New York</option>
+                        <option>Paris</option>
+                        <option>San Pedro</option>
+                    </select>
+                </div>
             </div>
 
-            <div id="section2-box2">
-                <p class="section2-box-text1 section1-box-text-left">Leave<img src="img/icons/Airplane Mode On.png"
-                        alt="airplane icon" id="section1-box-icon1"></p>
-                <p class="section2-box-text2 section1-box-text-left">23 Jan, Sat</p>
+            <div class="section2-box" id="section2-box2">
+                <div class="section2-box-left">
+                    <p class="section2-box-text1 section1-box-text-left">Leave<img src="img/icons/Airplane Mode On.png"
+                            alt="airplane icon" id="section1-box-icon1"></p>
+                    <p class="section2-box-text2 section1-box-text-left">23 Jan, Sat</p>
+                </div>
                 <img src="img/icons/Planner.png" alt="planner icon" class="section2-box-centerIcon">
-                <p class="section2-box-text1 section1-box-text-right">Return<img src="img/icons/Airplane Mode On.png"
-                        alt="airplane icon" id="section1-box-icon2"></p>
-                <p class="section2-box-text2 section1-box-text-right">14 Jan, Thu</p>
+                <div class="section2-box-right">
+                    <p class="section2-box-text1 section1-box-text-right">Return<img
+                            src="img/icons/Airplane Mode On.png" alt="airplane icon" id="section1-box-icon2"></p>
+                    <p class="section2-box-text2 section1-box-text-right">14 Jan, Thu</p>
+                </div>
             </div>
 
-            <button>
+            <button id="section2-btn1">
                 <img src="img/icons/zoom.png" alt="zoom icon">
             </button>
         </div>
@@ -78,9 +86,9 @@
     <section id="section3">
         <h2 class="section-header">Special Upcoming Offers</h2>
         <div class="tabs">
-            <input type="radio" class="tab-btn" name="sviat" checked>Team</input>
-            <input type="radio" class="tab-btn" name="sviat">Couple</input>
-            <input type="radio" class="tab-btn" name="sviat">Family</input>
+            <button class="tab-btn" id="section3-tab-btn-active" name="sviat">Team</button>
+            <button class="tab-btn" name="sviat">Couple</button>
+            <button class="tab-btn" name="sviat">Family</button>
         </div>
 
         <div id="section3-main">
@@ -90,11 +98,15 @@
                     <p class="section3-box-vertical-text">14 FEB 2022</p>
                 </div>
                 <div class="section3-box-info">
-                    <p class="section3-box-text1" id="section3-box1-text1">Relax</p>
-                    <p class="section3-box-text2">3 Days, 3 Nights</p>
+                    <div class="section3-box-info-box1">
+                        <p class="section3-box-text1" id="section3-box1-text1">Relax</p>
+                        <p class="section3-box-text2">3 Days, 3 Nights</p>
+                    </div>
                     <p class="section3-box-text3">Loga Sea</p>
-                    <p class="section3-box-text4">700$/Person</p>
-                    <button>Book Now</button>
+                    <div class="section3-box-info-box2">
+                        <p class="section3-box-text4">700$/Person</p>
+                        <button class="section3-box-btn">Book Now</button>
+                    </div>
                 </div>
             </div>
 
@@ -104,11 +116,15 @@
                     <p class="section3-box-vertical-text">18 JUN 2022</p>
                 </div>
                 <div class="section3-box-info">
-                    <p class="section3-box-text1" id="section3-box2-text1">Adventure</p>
-                    <p class="section3-box-text2">4 Days, 3 Nights</p>
+                    <div class="section3-box-info-box1">
+                        <p class="section3-box-text1" id="section3-box2-text1">Adventure</p>
+                        <p class="section3-box-text2">4 Days, 3 Nights</p>
+                    </div>
                     <p class="section3-box-text3">Ansgar Scheffold</p>
-                    <p class="section3-box-text4">400$/Person</p>
-                    <button>Book Now</button>
+                    <div class="section3-box-info-box2">
+                        <p class="section3-box-text4">400$/Person</p>
+                        <button class="section3-box-btn">Book Now</button>
+                    </div>
                 </div>
             </div>
 
@@ -118,11 +134,15 @@
                     <p class="section3-box-vertical-text">22 DEC 2022</p>
                 </div>
                 <div class="section3-box-info">
-                    <p class="section3-box-text1" id="section3-box3-text1">Relax</p>
-                    <p class="section3-box-text2">7 Days, 6 Nights</p>
+                    <div class="section3-box-info-box1">
+                        <p class="section3-box-text1" id="section3-box3-text1">Relax</p>
+                        <p class="section3-box-text2">7 Days, 6 Nights</p>
+                    </div>
                     <p class="section3-box-text3">Loga Sea</p>
-                    <p class="section3-box-text4">340$/Person</p>
-                    <button>Book Now</button>
+                    <div class="section3-box-info-box2">
+                        <p class="section3-box-text4">340$/Person</p>
+                        <button class="section3-box-btn">Book Now</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,15 +152,15 @@
     <section id="section4">
         <aside id="section4-aside">
             <img src="img/bg/bg2.png" id="section4-aside-bg" alt="background">
-            <div class="section4-aside-info">
+            <div class="section4-aside-info" id="section4-aside-info1">
                 <h4 class="section4-aside-info-text1">300+</h4>
                 <p class="section4-aside-info-text2">DESTINATIONS</p>
             </div>
-            <div class="section4-aside-info">
+            <div class="section4-aside-info" id="section4-aside-info2">
                 <h4 class="section4-aside-info-text1">5000+</h4>
                 <p class="section4-aside-info-text2">TOURISTS</p>
             </div>
-            <div class="section4-aside-info">
+            <div class="section4-aside-info" id="section4-aside-info3">
                 <h4 class="section4-aside-info-text1">150+</h4>
                 <p class="section4-aside-info-text2">HOTELS</p>
             </div>
@@ -153,7 +173,8 @@
                 world with us, Would you explore nature paradise in the world, let's find the best destination in world
                 with us. Would you explore nature paradise in the world, let's find the best destination in world with
                 us.
-
+                <br>
+                <br>
                 Would you explore nature paradise in the world, let's find the best destination in world with us.
             </p>
             <button id="section4-btn">Contact Us</button>
@@ -163,10 +184,10 @@
     <!-- SECTION 5 -->
     <section id="section5">
         <h2 class="section-header">Recommended Destination</h2>
-        <div class="tabs">
-            <input type="radio" class="tab-btn" name="vitalik" checked>Popular</input>
-            <input type="radio" class="tab-btn" name="vitalik">Adventure</input>
-            <input type="radio" class="tab-btn" name="vitalik">Breath</input>
+        <div class="tabs" id="section5-tabs">
+            <button class="tab-btn section5-tab" id="section5-tab-btn-active" name="sviat">Popular</button>
+            <button class="tab-btn section5-tab" name="sviat">Adventure</button>
+            <button class="tab-btn section5-tab" name="sviat">Breath</button>
         </div>
 
         <div id="section5-main">
@@ -177,7 +198,7 @@
                 </div>
                 <div class="section5-box-info">
                     <p class="section5-box-text1">Kina Mountain</p>
-                    <p class="section5-box-text2">Cambodia</p>
+                    <p class="section5-box-text2"><img src="img/icons/Location.png">Cambodia</p>
                 </div>
             </div>
 
@@ -188,7 +209,7 @@
                 </div>
                 <div class="section5-box-info">
                     <p class="section5-box-text1">Kina Mountain</p>
-                    <p class="section5-box-text2">Cambodia</p>
+                    <p class="section5-box-text2"><img src="img/icons/Location.png">Cambodia</p>
                 </div>
             </div>
 
@@ -199,7 +220,7 @@
                 </div>
                 <div class="section5-box-info">
                     <p class="section5-box-text1">Kina Mountain</p>
-                    <p class="section5-box-text2">Cambodia</p>
+                    <p class="section5-box-text2"><img src="img/icons/Location.png">Cambodia</p>
                 </div>
             </div>
 
@@ -210,37 +231,39 @@
                 </div>
                 <div class="section5-box-info">
                     <p class="section5-box-text1">Kina Mountain</p>
-                    <p class="section5-box-text2">Cambodia</p>
+                    <p class="section5-box-text2"><img src="img/icons/Location.png">Cambodia</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- SECTION 6 -->
-    <section class="section6">
-        <div class="section6-box">
-            <img src="img/icons/Quote.png" alt="quote icon" class="section6-box-icon1">
-            <p class="section6-box-text1">Our trip to Morocco was truly a onece in a lifetime experience and we are so
-                grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</p>
-            <a href="" class="section6-box-hyper1">-Vand D</a>
-            <p class="section6-box-text2">Happy Treloo</p>
-            <div class="section6-box-profile">
-                <img src="img/pfp/picture1.png" alt="profile picture" class="section6-box-profile-img">
-                <p class="section6-box-profile-rating"><img src="img/icons/Star.png"
-                        class="section6-box-profile-icon1">4.5</p>
+    <section id="section6">
+        <div id="section6-boxes">
+            <div class="section6-box">
+                <img src="img/icons/Quote.png" alt="quote icon" class="section6-box-icon1">
+                <p class="section6-box-text1">Our trip to Morocco was truly a onece in a lifetime experience and we are so
+                    grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</p>
+                <a href="" class="section6-box-hyper1">-Vand D</a>
+                <p class="section6-box-text2">Happy Treloo</p>
+                <div class="section6-box-profile">
+                    <img src="img/pfp/picture1.png" alt="profile picture" class="section6-box-profile-img">
+                    <p class="section6-box-profile-rating"><img src="img/icons/Star.png"
+                            class="section6-box-profile-icon1">4.5</p>
+                </div>
             </div>
-        </div>
-
-        <div class="section6-box">
-            <img src="img/icons/Quote.png" alt="quote icon" class="section6-box-icon1">
-            <p class="section6-box-text1">Our trip to Morocco was truly a onece in a lifetime experience and we are so
-                grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</p>
-            <a href="" class="section6-box-hyper1">-Tru Vio</a>
-            <p class="section6-box-text2">Happy Treloo</p>
-            <div class="section6-box-profile">
-                <img src="img/pfp/picture2.png" alt="profile picture" class="section6-box-profile-img">
-                <p class="section6-box-profile-rating"><img src="img/icons/Star.png"
-                        class="section6-box-profile-icon1">4.9</p>
+    
+            <div class="section6-box">
+                <img src="img/icons/Quote.png" alt="quote icon" class="section6-box-icon1">
+                <p class="section6-box-text1">Our trip to Morocco was truly a onece in a lifetime experience and we are so
+                    grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</p>
+                <a href="" class="section6-box-hyper1">-Tru Vio</a>
+                <p class="section6-box-text2">Happy Treloo</p>
+                <div class="section6-box-profile">
+                    <img src="img/pfp/picture2.png" alt="profile picture" class="section6-box-profile-img">
+                    <p class="section6-box-profile-rating"><img src="img/icons/Star.png"
+                            class="section6-box-profile-icon1">4.9</p>
+                </div>
             </div>
         </div>
 
@@ -251,7 +274,7 @@
     </section>
 
     <!-- SECTION 7 -->
-    <section class="section7">
+    <section id="section7">
         <img src="img/bg/bg3.png" alt="background" id="section7-bg">
         <div id="section7-main">
             <h2 id="section7-main-text">Don't Miss The 50% Discount if You register Today</h2>
@@ -261,14 +284,12 @@
 
     <!-- FOOTER -->
     <footer>
-        <div id="footer-left">
-            <p id="footer-left-text">© 2022 Treloo LLC - All right reserved.</p>
-        </div>
+        <p id="footer-text-left">© 2022 Treloo LLC - All right reserved.</p>
         <div id="footer-right">
-            <a href="" id="footer-link">Review</a>
-            <a href="" id="footer-link">Tips</a>
-            <a href="" id="footer-link">Alerts</a>
-            <a href="" id="footer-link">Blog</a>
+            <a href="" class="footer-link">Review</a>
+            <a href="" class="footer-link">Tips</a>
+            <a href="" class="footer-link">Alerts</a>
+            <a href="" class="footer-link">Blog</a>
         </div>
     </footer>
 </body>
