@@ -39,6 +39,11 @@ button {
     border-color: transparent;
 }
 
+button:hover {
+    background: rgb(227, 227, 227);
+    cursor: pointer;
+}
+
 select {
     border-color: transparent;
     -webkit-appearance: none;
@@ -85,6 +90,10 @@ nav {
     align-items: center;
 }
 
+.navbar-link:hover {
+    color: rgb(227, 227, 227);
+}
+
 #navbar-btn {
     height: 65px;
     width: 141px;
@@ -99,7 +108,6 @@ nav {
 #navbar-btn:hover {
     background: rgb(227, 227, 227);
 }
-
 
 #section1 {
     height: 952px;
@@ -119,8 +127,11 @@ nav {
 #section1-bg {
     position: absolute;
     width: 100%;
+    height: 900px;
     top: 0px;
     z-index: -1;
+    object-fit: cover;
+    background-size: cover;
 }
 
 #section1-main {
@@ -166,7 +177,7 @@ nav {
     margin-left: 130px;
     margin-right: 100px;
     margin-bottom: 210px;
-    margin-top: 280px;
+    margin-top: -70px;
 }
 
 #section2-tabs {
@@ -264,6 +275,10 @@ nav {
 
     background: rgba(62, 134, 245, 0.8);
     border-radius: 65px;
+}
+
+#section2-btn1:hover {
+    background: rgba(62, 134, 245, 0.7);
 }
 
 .section2-box-text1 {
@@ -542,6 +557,9 @@ nav {
     color: white;
 }
 
+#section4-btn:hover {
+    background: rgba(62, 134, 245, 0.8);
+}
 
 
 /* ----------------------------- SECTION 5 ----------------------------- */
@@ -559,6 +577,7 @@ nav {
     width: unset;
     background-color: transparent;
     box-shadow: none;
+    margin-top: 20px;
 }
 
 .section5-tab {
@@ -765,6 +784,11 @@ nav {
     margin-top: 0px;
     position: absolute;
     z-index: -1;
+    
+    height: 500px;
+    width: 80%;
+    object-fit: cover;
+    background-size: cover;
 }
 
 #section7-main {
@@ -797,6 +821,12 @@ nav {
     line-height: 30px;
     color: #3E86F5;
 }
+
+#section7-main-btn:hover {
+    background: rgb(227, 227, 227);
+}
+
+
 
 
 
