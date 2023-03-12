@@ -39,6 +39,10 @@ button {
     border-color: transparent;
 }
 
+button:hover {
+    background: rgb(227, 227, 227);
+}
+
 select {
     border-color: transparent;
     -webkit-appearance: none;
@@ -85,6 +89,10 @@ nav {
     align-items: center;
 }
 
+.navbar-link:hover {
+    color: rgb(227, 227, 227);
+}
+
 #navbar-btn {
     height: 65px;
     width: 141px;
@@ -99,7 +107,6 @@ nav {
 #navbar-btn:hover {
     background: rgb(227, 227, 227);
 }
-
 
 #section1 {
     height: 952px;
@@ -264,6 +271,10 @@ nav {
 
     background: rgba(62, 134, 245, 0.8);
     border-radius: 65px;
+}
+
+#section2-btn1:hover {
+    background: rgba(62, 134, 245, 0.7);
 }
 
 .section2-box-text1 {
@@ -542,6 +553,9 @@ nav {
     color: white;
 }
 
+#section4-btn:hover {
+    background: rgba(62, 134, 245, 0.8);
+}
 
 
 /* ----------------------------- SECTION 5 ----------------------------- */
@@ -797,6 +811,12 @@ nav {
     line-height: 30px;
     color: #3E86F5;
 }
+
+#section7-main-btn:hover {
+    background: rgb(227, 227, 227);
+}
+
+
 
 
 
