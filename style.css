@@ -136,15 +136,17 @@ nav {
 }
 
 #section1-main {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+
     text-align: center;
 }
 
 #section1-main-text1 {
     display: block;
-    height: 190px;
-    width: 820px;
+    width: 70%;
 
     font-size: 64px;
     font-weight: 600;
@@ -154,8 +156,7 @@ nav {
 
 #section1-main-text2 {
     display: block;
-    height: 123px;
-    width: 820px;
+    width: 70%;
 
     margin-top: 50px;
 
