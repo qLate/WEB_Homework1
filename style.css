@@ -284,7 +284,7 @@ nav {
 }
 
 .section2-box-text1 {
-    font-size: 18px;
+    font-size: 1.4vw;
     font-weight: 500;
     line-height: 27px;
 
@@ -292,7 +292,7 @@ nav {
 }
 
 .section2-box-text2 {
-    font-size: 24px;
+    font-size: 1.4vw;
     font-weight: 500;
     line-height: 36px;
 }
@@ -301,6 +301,7 @@ nav {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
+    font-size: 1.4vw;
 }
 
 .section2-box-centerIcon {
@@ -486,9 +487,9 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
-    padding-left: 140px;
-    padding-right: 160px;
+    padding-left: 100px;
     margin-bottom: 250px;
 }
 
@@ -536,7 +537,8 @@ nav {
 }
 
 #section4-main {
-    padding-left: 150px;
+    margin-left: 150px;
+    width: 550px;
 }
 
 .section4-text {
